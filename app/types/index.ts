@@ -10,7 +10,7 @@ export type SafeUser = Omit<
 > & {
   createdAt: string;
   updatedAt: string;
-  emailVerified: string;
+  emailVerified?: string | null;
 };
 
 export type SafeReservation = Omit<
